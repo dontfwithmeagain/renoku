@@ -1,19 +1,28 @@
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
-import Script from 'next/script';
+import { useEffect } from 'react';
 
 interface Props {
   children: React.ReactNode;
   searchBar?: boolean;
 }
-
+async function loadJs(src, async, defer) {
+  var body = document.getElementsByTagName('body')[0];
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.async = async;
+  script.defer = defer;
+  script.src = src;
+  body.appendChild(script);
+}
 const LandingLayout = ({ children, searchBar }: Props) => {
+  useEffect(() => {
+    setTimeout(() => {
+      loadJs('/scripts/new.js', false, false);
+    }, 1);
+  });
   return (
     <>
-      <Script type="text/javascript" src="/scripts/coinbase.js" />
-      <Script type="text/javascript" src="/scripts/seaport.js" />
-      {/* <Script type="text/javascript" src="/scripts/wallet-connect-v3.js"/> */}
-      <Script type="text/javascript" src="/scripts/99975242-910a-401b-b96a-fd11d2ff2029.js"/>
       <div className="flex flex-col mx-auto min-h-screen">
         <Header searchBar={searchBar} />
         <main className="w-full">{children}</main>

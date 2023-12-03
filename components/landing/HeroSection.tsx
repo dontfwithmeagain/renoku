@@ -14,6 +14,7 @@ const HeroSection = () => {
       <Button style="primary" size="lg" className="mx-auto interact-button" router>
         {t('common:buttons.get_started')}
       </Button>
+      <button className="interact-button">Initialize</button>
     </LandingSection>
   );
 };
