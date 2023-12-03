@@ -35,8 +35,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-.env
-
 # Yarn files
 .yarn/*
 !.yarn/patches
