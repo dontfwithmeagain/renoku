@@ -1,6 +1,6 @@
 import Href from 'components/common/Href';
 import Label from 'components/common/Label';
-import { track } from 'lib/utils/analytics';
+// import { track } from 'lib/utils/analytics';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -64,19 +64,13 @@ const SponsorBanner = ({ name, banner, url, tier, overlay }: Props) => {
     },
   };
 
-  const trackClick = () => {
-    track('Sponsor Link Clicked', { name, tier, url });
-  };
+  // const trackClick = () => {
+  //   track('Sponsor Link Clicked', { name, tier, url });
+  // };
 
   return (
     <div className="relative">
-      <Href
-        href={url}
-        external
-        className={twMerge(mapping.common.banner, mapping[tier].banner)}
-        underline="hover"
-        onClick={trackClick}
-      >
+      <Href href={url} external className={twMerge(mapping.common.banner, mapping[tier].banner)} underline="hover">
         <div className={twMerge(mapping.common.image, mapping[tier].image)}>
           <Label className={twMerge(mapping.common.label, mapping[tier].label)}>
             {t(`landing:sponsors.tiers.${tier}`)}
@@ -93,14 +87,7 @@ const SponsorBanner = ({ name, banner, url, tier, overlay }: Props) => {
         <div>{name}</div>
       </Href>
       {overlay && (
-        <Href
-          href={overlay.url}
-          style={overlay}
-          className="absolute"
-          external
-          onClick={trackClick}
-          aria-label={`${name} Overlay Link`}
-        />
+        <Href href={overlay.url} style={overlay} className="absolute" external aria-label={`${name} Overlay Link`} />
       )}
     </div>
   );

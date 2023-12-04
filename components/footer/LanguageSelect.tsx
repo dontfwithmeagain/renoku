@@ -1,7 +1,7 @@
 import Logo from 'components/common/Logo';
 import Select from 'components/common/Select';
 import { useColorTheme } from 'lib/hooks/useColorTheme';
-import { track } from 'lib/utils/analytics';
+// import { track } from 'lib/utils/analytics';
 import useTranslation from 'next-translate/useTranslation';
 import { useRouter } from 'next/router';
 import { FormatOptionLabelMeta } from 'react-select';
@@ -33,7 +33,7 @@ const LanguageSelect = () => {
 
   const selectLanguage = (option: Option) => {
     const locale = option.value;
-    track('Changed language', { from: lang, to: locale });
+    // track('Changed language', { from: lang, to: locale });
     replace(asPath, undefined, { locale, scroll: false });
     persistLocaleCookie(locale);
   };

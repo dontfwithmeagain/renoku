@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import type { AddressEvents, AllowanceData } from 'lib/interfaces';
 import { getAllowancesFromEvents, stripAllowanceData } from 'lib/utils/allowances';
-import { track } from 'lib/utils/analytics';
+// import { track } from 'lib/utils/analytics';
 import { hasZeroBalance } from 'lib/utils/tokens';
 import { useLayoutEffect, useState } from 'react';
 import { Address } from 'viem';
@@ -16,7 +16,7 @@ export const useAllowances = (address: Address, events: AddressEvents, chainId: 
     queryKey: ['allowances', address, chainId, events],
     queryFn: async () => {
       const allowances = getAllowancesFromEvents(address, events, publicClient, chainId);
-      track('Fetched Allowances', { account: address, chainId });
+      // track('Fetched Allowances', { account: address, chainId });
       return allowances;
     },
     // If events (transfers + approvals) don't change, derived allowances also shouldn't change, even if allowances

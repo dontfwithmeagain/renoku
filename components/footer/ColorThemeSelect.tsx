@@ -2,7 +2,7 @@ import { ComputerDesktopIcon, MoonIcon, SunIcon } from '@heroicons/react/24/outl
 import Select from 'components/common/Select';
 import { useColorTheme } from 'lib/hooks/useColorTheme';
 import { useMounted } from 'lib/hooks/useMounted';
-import { track } from 'lib/utils/analytics';
+// import { track } from 'lib/utils/analytics';
 import useTranslation from 'next-translate/useTranslation';
 
 const ColorThemeSelect = () => {
@@ -17,7 +17,7 @@ const ColorThemeSelect = () => {
   ] as const;
 
   const selectTheme = (option: (typeof options)[number]) => {
-    track('Changed Color Theme', { theme: option.value });
+    // track('Changed Color Theme', { theme: option.value });
     setTheme(option.value);
   };
 

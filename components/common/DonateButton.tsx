@@ -3,7 +3,7 @@ import Button from 'components/common/Button';
 import Modal from 'components/common/Modal';
 import { DONATION_ADDRESS } from 'lib/constants';
 import { getWalletAddress } from 'lib/utils';
-import { track } from 'lib/utils/analytics';
+// import { track } from 'lib/utils/analytics';
 import { getChainNativeToken, getDefaultDonationAmount } from 'lib/utils/chains';
 import useTranslation from 'next-translate/useTranslation';
 import type { MutableRefObject, ReactText } from 'react';
@@ -62,7 +62,7 @@ const DonateButton = ({ size, style, className, parentToastRef }: Props) => {
 
       toast.info(t('common:toasts.donation_sent'));
 
-      track('Donated', { chainId: chain?.id, amount: Number(amount) });
+      //track('Donated', { chainId: chain?.id, amount: Number(amount) });
 
       handleClose();
     } catch (err) {

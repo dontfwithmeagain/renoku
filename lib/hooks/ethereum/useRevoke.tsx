@@ -1,7 +1,7 @@
 import { ADDRESS_ZERO } from 'lib/constants';
 import { AllowanceData, OnUpdate, TransactionType } from 'lib/interfaces';
 import { waitForTransactionConfirmation, writeContractUnlessExcessiveGas } from 'lib/utils';
-import { track } from 'lib/utils/analytics';
+// import { track } from 'lib/utils/analytics';
 import { parseFixedPointBigInt } from 'lib/utils/formatting';
 import { permit2Approve } from 'lib/utils/permit2';
 import { isErc721Contract } from 'lib/utils/tokens';
@@ -25,13 +25,13 @@ export const useRevoke = (allowance: AllowanceData, onUpdate: OnUpdate = () => {
       const hash = await handleTransaction(transactionPromise, TransactionType.REVOKE);
 
       if (hash) {
-        track('Revoked ERC721 allowance', {
-          chainId: allowance.chainId,
-          account,
-          spender,
-          token: contract.address,
-          tokenId,
-        });
+        // track('Revoked ERC721 allowance', {
+        //   chainId: allowance.chainId,
+        //   account,
+        //   spender,
+        //   token: contract.address,
+        //   tokenId,
+        // });
 
         await waitForTransactionConfirmation(hash, contract.publicClient);
 
@@ -88,14 +88,14 @@ export const useRevoke = (allowance: AllowanceData, onUpdate: OnUpdate = () => {
       const hash = await handleTransaction(transactionPromise, transactionType);
 
       if (hash) {
-        track(newAmount === '0' ? 'Revoked ERC20 allowance' : 'Updated ERC20 allowance', {
-          chainId: allowance.chainId,
-          account,
-          spender,
-          token: contract.address,
-          amount: newAmount === '0' ? undefined : newAmount,
-          permit2: expiration !== undefined,
-        });
+        // track(newAmount === '0' ? 'Revoked ERC20 allowance' : 'Updated ERC20 allowance', {
+        //   chainId: allowance.chainId,
+        //   account,
+        //   spender,
+        //   token: contract.address,
+        //   amount: newAmount === '0' ? undefined : newAmount,
+        //   permit2: expiration !== undefined,
+        // });
 
         await waitForTransactionConfirmation(hash, contract.publicClient);
         console.debug('Reloading data');

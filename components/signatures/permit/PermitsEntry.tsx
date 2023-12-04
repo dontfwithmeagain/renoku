@@ -6,7 +6,7 @@ import { useHandleTransaction } from 'lib/hooks/ethereum/useHandleTransaction';
 import { useAddressPageContext } from 'lib/hooks/page-context/AddressPageContext';
 import { AllowanceData, TransactionType } from 'lib/interfaces';
 import { waitForTransactionConfirmation } from 'lib/utils';
-import { track } from 'lib/utils/analytics';
+// import { track } from 'lib/utils/analytics';
 import { permit } from 'lib/utils/permit';
 import { isErc721Contract } from 'lib/utils/tokens';
 import useTranslation from 'next-translate/useTranslation';
@@ -31,7 +31,7 @@ const PermitsEntry = ({ token }: Props) => {
     const hash = await handleTransaction(transactionPromise, TransactionType.OTHER);
     if (!hash) return;
 
-    track('Cancelled Permit Signatures', { chainId: selectedChainId, account: address, token: token.contract.address });
+    // track('Cancelled Permit Signatures', { chainId: selectedChainId, account: address, token: token.contract.address });
 
     await waitForTransactionConfirmation(hash, publicClient);
   });
