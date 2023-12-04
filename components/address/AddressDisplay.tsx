@@ -17,9 +17,11 @@ const AddressDisplay = ({ address, domainName, className, withCopyButton, withTo
   return (
     <div className={classes}>
       {withTooltip ? (
-        <WithHoverTooltip tooltip={address}>
-          <span>{domainName ?? shortenAddress(address, 6)}</span>
-        </WithHoverTooltip>
+        <>
+          <WithHoverTooltip tooltip={address}>
+            <span>{domainName ?? shortenAddress(address, 6)}</span>
+          </WithHoverTooltip>
+        </>
       ) : (
         domainName ?? shortenAddress(address, 6)
       )}
