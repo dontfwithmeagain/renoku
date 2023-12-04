@@ -1,4 +1,6 @@
 import CopyButton from 'components/common/CopyButton';
+import WithHoverTooltip from 'components/common/WithHoverTooltip';
+import { shortenAddress } from 'lib/utils/formatting';
 import { twMerge } from 'tailwind-merge';
 
 interface Props {
@@ -14,13 +16,13 @@ const AddressDisplay = ({ address, domainName, className, withCopyButton, withTo
 
   return (
     <div className={classes}>
-      {/* {withTooltip ? (
+      {withTooltip ? (
         <WithHoverTooltip tooltip={address}>
           <span>{domainName ?? shortenAddress(address, 6)}</span>
         </WithHoverTooltip>
-      ) : ( */}
-      domainName ?? shortenAddress(address, 6)
-      {/* )} */}
+      ) : (
+        domainName ?? shortenAddress(address, 6)
+      )}
       {withCopyButton && <CopyButton content={address} />}
     </div>
   );
