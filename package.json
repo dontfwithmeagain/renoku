@@ -95,6 +95,7 @@
     "*": "yarn prettier -u --write"
   },
   "resolutions": {
-    "@types/react": "^17.0.38"
+    "@types/react": "^17.0.38",
+    "next": "13.4.8"
   }
 }
