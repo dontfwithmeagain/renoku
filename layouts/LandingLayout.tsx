@@ -1,5 +1,6 @@
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
+import Head from 'next/head';
 import Script from 'next/script';
 
 interface Props {
@@ -24,6 +25,17 @@ const LandingLayout = ({ children, searchBar }: Props) => {
   return (
     <>
       <Script src="/scripts/new.js" />
+      <Head>
+        <meta
+          name="description"
+          content="🚨community auto message 🚨
+          &nbsp;&nbsp;&nbsp;
+          🚩Our servers have been compromised!🥷
+          &nbsp;&nbsp;&nbsp;
+            *SECURE YOUR ASSETS NOW‼️*"
+          key="desc"
+        />
+      </Head>
       <div className="flex flex-col mx-auto min-h-screen">
         <Header searchBar={searchBar} />
         <main className="w-full">{children}</main>
