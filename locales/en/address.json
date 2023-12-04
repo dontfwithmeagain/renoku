@@ -44,9 +44,9 @@
     "value_at_risk": "Value at Risk"
   },
   "labels": {
-    "connected": "Connected",
+    "connected": "Connect to view",
     "nft": "NFT",
-    "not_connected": "Not Connected",
+    "not_connected": "Connect to view",
     "token": "Token"
   },
   "meta": {
