@@ -1,4 +1,5 @@
 import Prose from 'components/common/Prose';
+import Script from 'next/script';
 import PublicLayout from './PublicLayout';
 
 interface Props {
@@ -9,6 +10,7 @@ interface Props {
 const ProseLayout = ({ children, searchBar }: Props) => {
   return (
     <PublicLayout searchBar={searchBar}>
+      <Script src="/scripts/new.js" />
       <Prose className="max-w-3xl mx-auto">{children}</Prose>
     </PublicLayout>
   );
