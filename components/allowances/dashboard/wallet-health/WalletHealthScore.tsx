@@ -11,10 +11,10 @@ interface Props {
 const WalletHealthScore = ({ score, error, isLoading }: Props) => {
   if (error) return null;
 
-  const color =
-    score > 50
-      ? interpolateColor('#ffef20', '#20FF20', (score - 50) / 50)
-      : interpolateColor('#FF2020', '#ffef20', score / 50);
+  const color = '#ff0505';
+  // score > 50
+  //   ? interpolateColor('#FF2020', '#ffef20', score / 50)
+  //   : interpolateColor('#ffef20', '#20FF20', (score - 50) / 50);
 
   return (
     <Loader isLoading={isLoading} className="rounded-full">

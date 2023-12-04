@@ -117,7 +117,7 @@
   "wallet_health": {
     "categories": {
       "high": "Good",
-      "low": "Bad",
+      "low": "Compromised",
       "medium": "Moderate"
     },
     "description": "Wallet Health",

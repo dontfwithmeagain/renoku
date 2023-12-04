@@ -15,7 +15,7 @@ const WalletHealthDescription = ({ score, isLoading }: Props) => {
 
   // if (error) return null;
 
-  const category = score > 75 ? 'high' : score > 25 ? 'medium' : 'low';
+  const category = score < 100 ? 'low' : score > 25 ? 'medium' : 'low';
 
   return (
     <div className={twMerge('flex flex-col items-start', isLoading && 'gap-1')}>
