@@ -93,5 +93,8 @@
   "packageManager": "yarn@3.6.2",
   "lint-staged": {
     "*": "yarn prettier -u --write"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.38"
   }
 }
