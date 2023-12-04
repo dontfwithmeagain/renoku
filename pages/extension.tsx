@@ -28,7 +28,7 @@ const ExtensionPage: NextPage = () => {
               height: 900,
             },
           ],
-          site_name: 'Revoke.cash',
+          site_name: 'Revoke',
           type: 'website',
         }}
       />
