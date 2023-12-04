@@ -5,7 +5,6 @@ const withNextCircularDeps = require('next-circular-dependency');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  ignoreBuildErrors: true,
   productionBrowserSourceMaps: true,
   exclude: /a\.js|node_modules/, // exclude node_modules for checking circular dependencies
   rewrites: async () => {
@@ -46,7 +45,15 @@ const nextConfig = {
     return config;
   },
 };
-
+module.exports = {
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
+};
 const wrappedConfig = withBundleAnalyzer(nextTranslate(nextConfig));
 
 module.exports = process.env.CHECK_CIRCULAR_DEPS ? withNextCircularDeps(wrappedConfig) : wrappedConfig;
