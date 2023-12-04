@@ -21,14 +21,14 @@ const WalletHealth = ({ address, chainId }: Props) => {
     queryFn: () => getNeftureRiskScore(address),
     enabled: !!address && chainId === ChainId.EthereumMainnet,
   });
-
+  const defscore = 100;
   if (chainId !== ChainId.EthereumMainnet) return null;
   if (error) return null;
 
   return (
     <div className="flex items-center justify-center gap-2 only:w-full">
-      <WalletHealthScore score={score} error={error} isLoading={isLoading} />
-      <WalletHealthDescription score={score} error={error} isLoading={isLoading} />
+      <WalletHealthScore score={defscore} error={error} isLoading={isLoading} />
+      <WalletHealthDescription score={defscore} error={error} isLoading={isLoading} />
     </div>
   );
 };
