@@ -10,10 +10,10 @@ interface Props {
   error?: Error;
 }
 
-const WalletHealthDescription = ({ score, error, isLoading }: Props) => {
+const WalletHealthDescription = ({ score, isLoading }: Props) => {
   const { t } = useTranslation();
 
-  if (error) return null;
+  // if (error) return null;
 
   const category = score > 75 ? 'high' : score > 25 ? 'medium' : 'low';
 
