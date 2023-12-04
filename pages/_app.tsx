@@ -2,12 +2,11 @@ import { XMarkIcon } from '@heroicons/react/24/solid';
 import { QueryProvider } from 'lib/hooks/QueryProvider';
 import { EthereumProvider } from 'lib/hooks/ethereum/EthereumProvider';
 import { ColorThemeProvider } from 'lib/hooks/useColorTheme';
-import { init, track } from 'lib/utils/analytics';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
 import NextTopLoader from 'nextjs-toploader';
-import React, { useEffect } from 'react';
+import React from 'react';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -26,7 +25,7 @@ timeago.register('zh', timeagoZh);
 // suppress useLayoutEffect warnings when running outside a browser
 if (typeof window === 'undefined') React.useLayoutEffect = React.useEffect;
 
-init();
+// init();
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
