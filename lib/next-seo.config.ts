@@ -3,7 +3,7 @@ import type { NextSeoProps } from 'next-seo';
 // For some reason next-seo's DefaultSeo isn't working, so I'll do it like this
 export const defaultSEO: NextSeoProps = {
   // title + description are included through next-translate
-  titleTemplate: '%s | Revoke.cash',
+  // titleTemplate: '%s | Revoke.cash',
   openGraph: {
     url: 'https://revoke.cash/',
     images: [
@@ -13,14 +13,14 @@ export const defaultSEO: NextSeoProps = {
         height: 900,
       },
     ],
-    site_name: 'Revoke.cash',
-    type: 'website',
+    // site_name: 'Revoke.cash',
+    // type: 'website',
   },
-  twitter: {
-    handle: '@RoscoKalis',
-    site: '@RevokeCash',
-    cardType: 'summary_large_image',
-  },
+  // twitter: {
+  //   handle: '@RoscoKalis',
+  //   site: '@RevokeCash',
+  //   cardType: 'summary_large_image',
+  // },
   additionalLinkTags: [
     {
       rel: 'icon',
