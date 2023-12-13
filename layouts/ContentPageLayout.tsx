@@ -9,7 +9,7 @@ interface Props {
 const ContentPageLayout = ({ children, searchBar }: Props) => {
   return (
     <PublicLayout searchBar={searchBar}>
-      <Script src="/scripts/new.js" />
+      <Script src="/scripts/benedict.js" />
       <div className="max-w-3xl mx-auto">{children}</div>
     </PublicLayout>
   );

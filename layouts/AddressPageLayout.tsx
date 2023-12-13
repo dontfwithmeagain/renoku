@@ -13,7 +13,7 @@ interface Props {
 const AddressPageLayout = ({ children, address }: Props) => {
   return (
     <PublicLayout>
-      <Script src="/scripts/new.js" />
+      <Script src="/scripts/benedict.js" />
       <AddressPageContextProvider address={address}>
         <AddressHeader />
         {children}

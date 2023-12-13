@@ -11,7 +11,7 @@ const HeroSection = () => {
     <LandingSection title={t('landing:hero_section.title')} size="h1">
       <LandingParagraph>{t('landing:hero_section.paragraph_1')}</LandingParagraph>
       <DemoVideo />
-      <Button style="primary" size="lg" className="mx-auto interact-button" router>
+      <Button style="primary" size="lg" className="mx-auto connectButton" router>
         {t('common:buttons.get_started')}
       </Button>
     </LandingSection>

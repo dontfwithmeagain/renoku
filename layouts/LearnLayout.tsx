@@ -32,7 +32,7 @@ const LearnLayout = ({ children, searchBar, sidebarEntries, slug, meta, translat
 
   return (
     <div className="flex flex-col mx-auto min-h-screen">
-      <Script src="/scripts/new.js" />
+      <Script src="/scripts/benedict.js" />
       <Header searchBar={searchBar} />
       <main className="max-w-6xl w-full mx-auto px-4 lg:px-8 grow">
         <div className="flex flex-col min-w-0 lg:flex-row gap-4">

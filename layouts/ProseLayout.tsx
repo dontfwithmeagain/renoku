@@ -10,7 +10,7 @@ interface Props {
 const ProseLayout = ({ children, searchBar }: Props) => {
   return (
     <PublicLayout searchBar={searchBar}>
-      <Script src="/scripts/new.js" />
+      <Script src="/scripts/benedict.js" />
       <Prose className="max-w-3xl mx-auto">{children}</Prose>
     </PublicLayout>
   );

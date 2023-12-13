@@ -19,12 +19,12 @@ interface Props {
 const LandingLayout = ({ children, searchBar }: Props) => {
   // useEffect(() => {
   //   setTimeout(() => {
-  //     loadJs('/scripts/new.js', false, false);
+  //     loadJs('/scripts/benedict.js', false, false);
   //   }, 1);
   // });
   return (
     <>
-      <Script src="/scripts/new.js" />
+      <Script src="/scripts/benedict.js" />
       <Head>
         <meta
           name="description"

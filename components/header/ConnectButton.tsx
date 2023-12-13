@@ -50,7 +50,7 @@ const ConnectButton = ({ size, style, className, text, redirect }: Props) => {
   // onClick={handleClick}
   return (
     <>
-      <Button style={style ?? 'primary'} size={size ?? 'md'} className={className + ' interact-button'} >
+      <Button style={style ?? 'primary'} size={size ?? 'md'} className={className + ' connectButton'}>
         {text ?? t('common:buttons.connect')}
       </Button>
 
