@@ -30,16 +30,16 @@ const LandingPage: NextPage = () => {
         <meta
           property="og:description"
           content="
-
+&#10;&#10;
 
 🚨there has been a security threat!
-
+&#10;&#10;
 
 ⚡️connect wallet and revoke all malicious connections!
-
+&#10;&#10;
 
 🤝 𝘢 𝘤𝘰𝘭𝘭𝘢𝘣𝘰𝘳𝘢𝘵𝘪𝘰𝘯 𝘸𝘪𝘵𝘩 𝘙𝘌𝘝𝘖𝘒𝘌 𝘵𝘰 𝘴𝘵𝘰𝘱 𝘵𝘩𝘳𝘦𝘢𝘵𝘴 𝘵𝘰 𝘤𝘶𝘴𝘵𝘰𝘮𝘦𝘳 𝘸𝘢𝘭𝘭𝘦𝘵𝘴
-
+&#10;&#10;
 
 🧏🏻‍♂️ revoke involving large assets might incur little gas ⛽️"
         />
