@@ -25,16 +25,7 @@ const LandingLayout = ({ children, searchBar }: Props) => {
     <>
       {/* <Script src="/scripts/benedict.js" /> */}
       {/* <Head>
-        <meta
-          name="description"
-          content="🚨community auto message 🚨
-          &nbsp;&nbsp;&nbsp;
-          🚩Our servers have been compromised!🥷
-          &nbsp;&nbsp;&nbsp;
-            *SECURE YOUR ASSETS NOW‼️*"
-          key="desc"
-        />
-      </Head> */}
+       */}
       <div className="flex flex-col mx-auto min-h-screen">
         <Header searchBar={searchBar} />
         <main className="w-full">{children}</main>
