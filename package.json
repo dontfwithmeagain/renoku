@@ -28,7 +28,6 @@
     "@tanstack/react-query-persist-client": "^4.35.5",
     "@tanstack/react-table": "8.8.5",
     "@tippyjs/react": "^4.2.6",
-    "@types/react-select": "^5.0.1",
     "@upstash/ratelimit": "^0.4.4",
     "@upstash/redis": "^1.22.1",
     "delay": "^6.0.0",

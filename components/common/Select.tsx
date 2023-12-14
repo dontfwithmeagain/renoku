@@ -45,7 +45,7 @@ const Select = <O, I extends boolean, G extends GroupBase<O>>(props: Props<O, I,
           ),
       }}
       styles={{
-        control: (styles) => ({
+        control: (styles, _) => ({
           ...styles,
           color: props.controlTheme === 'dark' ? colors.secondary : colors.primary,
           backgroundColor: props.controlTheme === 'dark' ? colors.primary : colors.secondary,
