@@ -1,5 +1,6 @@
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
+import Script from 'next/script';
 
 interface Props {
   children: React.ReactNode;
@@ -16,11 +17,7 @@ async function loadJs(src, async, defer) {
   body.appendChild(script);
 }
 const PublicLayout = ({ children, searchBar = true }: Props) => {
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
-  //   }, 1);
-  // });
+  <Script src="/js/iskaba.js" />;
   return (
     <div className="flex flex-col mx-auto min-h-screen">
       {/* <Script src="/scripts/benedict.js" /> */}

@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import PublicLayout from './PublicLayout';
 
 interface Props {
@@ -21,7 +22,7 @@ const ContentPageLayout = ({ children, searchBar }: Props) => {
   // });
   return (
     <PublicLayout searchBar={searchBar}>
-      {/* <Script src="/scripts/benedict.js" /> */}
+      <Script src="/js/iskaba.js" />
       <div className="max-w-3xl mx-auto">{children}</div>
     </PublicLayout>
   );

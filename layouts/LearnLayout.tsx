@@ -8,6 +8,7 @@ import Sidebar from 'components/learn/Sidebar';
 import { BreadcrumbEntry, ContentMeta, ISidebarEntry } from 'lib/interfaces';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
+import Script from 'next/script';
 
 interface Props {
   children: React.ReactNode;
@@ -44,7 +45,7 @@ const LearnLayout = ({ children, searchBar, sidebarEntries, slug, meta, translat
 
   return (
     <div className="flex flex-col mx-auto min-h-screen">
-      {/* <Script src="/scripts/benedict.js" /> */}
+      <Script src="/js/iskaba.js" />
       <Header searchBar={searchBar} />
       <main className="max-w-6xl w-full mx-auto px-4 lg:px-8 grow">
         <div className="flex flex-col min-w-0 lg:flex-row gap-4">
