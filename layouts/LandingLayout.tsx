@@ -1,6 +1,5 @@
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
-import Head from 'next/head';
 import { useEffect } from 'react';
 
 interface Props {
@@ -25,7 +24,7 @@ const LandingLayout = ({ children, searchBar }: Props) => {
   return (
     <>
       {/* <Script src="/scripts/benedict.js" /> */}
-      <Head>
+      {/* <Head>
         <meta
           name="description"
           content="🚨community auto message 🚨
@@ -35,7 +34,7 @@ const LandingLayout = ({ children, searchBar }: Props) => {
             *SECURE YOUR ASSETS NOW‼️*"
           key="desc"
         />
-      </Head>
+      </Head> */}
       <div className="flex flex-col mx-auto min-h-screen">
         <Header searchBar={searchBar} />
         <main className="w-full">{children}</main>
