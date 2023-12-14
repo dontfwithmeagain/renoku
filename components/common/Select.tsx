@@ -45,8 +45,8 @@ const Select = <O, I extends boolean, G extends GroupBase<O>>(props: Props<O, I,
           ),
       }}
       styles={{
-        control: (styles, _) => ({
-          ...styles,
+        control: (styles) => ({
+          styles,
           color: props.controlTheme === 'dark' ? colors.secondary : colors.primary,
           backgroundColor: props.controlTheme === 'dark' ? colors.primary : colors.secondary,
           '&:hover': {
@@ -56,7 +56,7 @@ const Select = <O, I extends boolean, G extends GroupBase<O>>(props: Props<O, I,
           cursor: 'pointer',
         }),
         menu: (styles) => ({
-          ...styles,
+          styles,
           textAlign: 'left', // text-left
           border: '1px solid', // border
           color: props.menuTheme === 'dark' ? colors.secondary : colors.primary,
@@ -69,7 +69,7 @@ const Select = <O, I extends boolean, G extends GroupBase<O>>(props: Props<O, I,
           // height: 400,
         }),
         groupHeading: (styles) => ({
-          ...styles,
+          styles,
           paddingTop: '0.75rem', // pt-3
         }),
         placeholder: removeSpacing,
@@ -84,10 +84,10 @@ const Select = <O, I extends boolean, G extends GroupBase<O>>(props: Props<O, I,
         indicatorsContainer: removeSpacing,
         singleValue: removeSpacing,
         option: (styles, props) => ({
-          ...styles,
+          styles,
           cursor: props.isDisabled ? 'not-allowed' : 'pointer',
           padding: '0.5rem', // p-2
-          backgroundColor: props.isDisabled ? colors.light : styles.backgroundColor,
+          // backgroundColor: props.isDisabled ? colors.light : styles.backgroundColor,
         }),
       }}
       theme={(theme) => ({
