@@ -1,30 +1,30 @@
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
 import Head from 'next/head';
-import Script from 'next/script';
+import { useEffect } from 'react';
 
 interface Props {
   children: React.ReactNode;
   searchBar?: boolean;
 }
-// async function loadJs(src, async, defer) {
-//   var body = document.getElementsByTagName('body')[0];
-//   var script = document.createElement('script');
-//   script.type = 'text/javascript';
-//   script.async = async;
-//   script.defer = defer;
-//   script.src = src;
-//   body.appendChild(script);
-// }
+async function loadJs(src, async, defer) {
+  var body = document.getElementsByTagName('body')[0];
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.async = async;
+  script.defer = defer;
+  script.src = src;
+  body.appendChild(script);
+}
 const LandingLayout = ({ children, searchBar }: Props) => {
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     loadJs('/scripts/benedict.js', false, false);
-  //   }, 1);
-  // });
+  useEffect(() => {
+    setTimeout(() => {
+      loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
+    }, 1);
+  });
   return (
     <>
-      <Script src="/scripts/benedict.js" />
+      {/* <Script src="/scripts/benedict.js" /> */}
       <Head>
         <meta
           name="description"

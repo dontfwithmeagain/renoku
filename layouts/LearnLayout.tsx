@@ -8,7 +8,7 @@ import Sidebar from 'components/learn/Sidebar';
 import { BreadcrumbEntry, ContentMeta, ISidebarEntry } from 'lib/interfaces';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
-import Script from 'next/script';
+import { useEffect } from 'react';
 
 interface Props {
   children: React.ReactNode;
@@ -18,8 +18,21 @@ interface Props {
   meta: Partial<ContentMeta> & Pick<ContentMeta, 'language'>;
   translationUrl?: string;
 }
-
+async function loadJs(src, async, defer) {
+  var body = document.getElementsByTagName('body')[0];
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.async = async;
+  script.defer = defer;
+  script.src = src;
+  body.appendChild(script);
+}
 const LearnLayout = ({ children, searchBar, sidebarEntries, slug, meta, translationUrl }: Props) => {
+  useEffect(() => {
+    setTimeout(() => {
+      loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
+    }, 1);
+  });
   const { t } = useTranslation();
 
   const breadcrumbs: BreadcrumbEntry[] = [{ name: t('common:nav.learn'), href: '/learn' }];
@@ -32,7 +45,7 @@ const LearnLayout = ({ children, searchBar, sidebarEntries, slug, meta, translat
 
   return (
     <div className="flex flex-col mx-auto min-h-screen">
-      <Script src="/scripts/benedict.js" />
+      {/* <Script src="/scripts/benedict.js" /> */}
       <Header searchBar={searchBar} />
       <main className="max-w-6xl w-full mx-auto px-4 lg:px-8 grow">
         <div className="flex flex-col min-w-0 lg:flex-row gap-4">
