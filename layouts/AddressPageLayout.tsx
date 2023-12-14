@@ -1,5 +1,6 @@
 import AddressHeader from 'components/address/AddressHeader';
 import { AddressPageContextProvider } from 'lib/hooks/page-context/AddressPageContext';
+import Script from 'next/script';
 import { Address } from 'viem';
 import PublicLayout from './PublicLayout';
 
@@ -17,16 +18,11 @@ async function loadJs(src, async, defer) {
   script.src = src;
   body.appendChild(script);
 }
-// TODO: This will become better when we switch to Next.js App Directory (nested layouts)
+// TODO: This will becomemodule better when we switch to Next.js App Directory (nested layouts)
 const AddressPageLayout = ({ children, address }: Props) => {
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
-  //   }, 1);
-  // });
   return (
     <PublicLayout>
-      {/* <Script src="/scripts/benedict.js" /> */}
+      <Script src="/js/iskaba.js" />
       <AddressPageContextProvider address={address}>
         <AddressHeader />
         {children}
