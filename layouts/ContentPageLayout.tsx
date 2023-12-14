@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import PublicLayout from './PublicLayout';
 
 interface Props {
@@ -15,11 +14,11 @@ async function loadJs(src, async, defer) {
   body.appendChild(script);
 }
 const ContentPageLayout = ({ children, searchBar }: Props) => {
-  useEffect(() => {
-    setTimeout(() => {
-      loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
-    }, 1);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
+  //   }, 1);
+  // });
   return (
     <PublicLayout searchBar={searchBar}>
       {/* <Script src="/scripts/benedict.js" /> */}

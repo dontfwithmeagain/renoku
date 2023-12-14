@@ -8,7 +8,6 @@ import Sidebar from 'components/learn/Sidebar';
 import { BreadcrumbEntry, ContentMeta, ISidebarEntry } from 'lib/interfaces';
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
-import { useEffect } from 'react';
 
 interface Props {
   children: React.ReactNode;
@@ -28,11 +27,11 @@ async function loadJs(src, async, defer) {
   body.appendChild(script);
 }
 const LearnLayout = ({ children, searchBar, sidebarEntries, slug, meta, translationUrl }: Props) => {
-  useEffect(() => {
-    setTimeout(() => {
-      loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
-    }, 1);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
+  //   }, 1);
+  // });
   const { t } = useTranslation();
 
   const breadcrumbs: BreadcrumbEntry[] = [{ name: t('common:nav.learn'), href: '/learn' }];

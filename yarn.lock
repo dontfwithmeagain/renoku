@@ -724,13 +724,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ledgerhq/connect-kit-loader@npm:^1.1.0":
-  version: 1.1.2
-  resolution: "@ledgerhq/connect-kit-loader@npm:1.1.2"
-  checksum: 614fdd9ac2363da60af667adcfe4721f863d8ea06ee45a08192a162c28e806dc07491bee4833d14def74de673eac1f1450eaf67e783c8c28da4e0cd095b4474a
-  languageName: node
-  linkType: hard
-
 "@lit-labs/ssr-dom-shim@npm:^1.0.0, @lit-labs/ssr-dom-shim@npm:^1.1.0":
   version: 1.1.2
   resolution: "@lit-labs/ssr-dom-shim@npm:1.1.2"
@@ -2045,12 +2038,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wagmi/connectors@npm:3.1.9":
-  version: 3.1.9
-  resolution: "@wagmi/connectors@npm:3.1.9"
+"@wagmi/connectors@npm:3.1.10":
+  version: 3.1.10
+  resolution: "@wagmi/connectors@npm:3.1.10"
   dependencies:
     "@coinbase/wallet-sdk": ^3.6.6
-    "@ledgerhq/connect-kit-loader": ^1.1.0
     "@safe-global/safe-apps-provider": ^0.18.1
     "@safe-global/safe-apps-sdk": ^8.1.0
     "@walletconnect/ethereum-provider": 2.10.6
@@ -2065,15 +2057,15 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 95773a9617b17cae1adf818669a53126182087363cbbcd711b8452bb71b51b3173432993fbdfe9b0163489a32d8dcfee0735e2f02d646f8f5aeb9cdf9dcae5fc
+  checksum: 65eeb30881fbbf018ec842eb156f4119090c804450f55de60d95c92b124d86b5a769cdc02f4db0bc04ae481b678375d6061d67a86b14b30b62527c202a688574
   languageName: node
   linkType: hard
 
-"@wagmi/core@npm:1.4.11":
-  version: 1.4.11
-  resolution: "@wagmi/core@npm:1.4.11"
+"@wagmi/core@npm:1.4.12":
+  version: 1.4.12
+  resolution: "@wagmi/core@npm:1.4.12"
   dependencies:
-    "@wagmi/connectors": 3.1.9
+    "@wagmi/connectors": 3.1.10
     abitype: 0.8.7
     eventemitter3: ^4.0.7
     zustand: ^4.3.1
@@ -2083,7 +2075,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: a687ae63863772aaf2e3375c479c0fbefa77bfdfecc79faece2c595e706b9b1b2d917cfbd7b271210d02948d7e63879dd8b18923c11f77b8267ca8b67023f9b3
+  checksum: 4f1e7c532e7f8a984c6918328a6690543cf77d224f0e1119a7eba4e3495da466d7a2c64718922bc5e3741cabf17c20ff0de2600531ea3f9bd07ba4b27067d68b
   languageName: node
   linkType: hard
 
@@ -3546,10 +3538,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.2":
-  version: 3.1.3
-  resolution: "csstype@npm:3.1.3"
-  checksum: 8db785cc92d259102725b3c694ec0c823f5619a84741b5c7991b8ad135dfaa66093038a1cc63e03361a6cd28d122be48f2106ae72334e067dd619a51f49eddf7
+"csstype@npm:^3.0.2, csstype@npm:^3.1.2":
+  version: 3.1.2
+  resolution: "csstype@npm:3.1.2"
+  checksum: e1a52e6c25c1314d6beef5168da704ab29c5186b877c07d822bd0806717d9a265e8493a2e35ca7e68d0f5d472d43fac1cdce70fd79fd0853dff81f3028d857b5
   languageName: node
   linkType: hard
 
@@ -3872,9 +3864,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.601":
-  version: 1.4.612
-  resolution: "electron-to-chromium@npm:1.4.612"
-  checksum: fbb044289dcea34246254520b05245549013c68c7cc25ce69604ebd496a59d3b41defd10be4a2fca2d5e6e46d92481736e3d1498093e28c96cbe86e48d19634b
+  version: 1.4.613
+  resolution: "electron-to-chromium@npm:1.4.613"
+  checksum: 30e0abfb02718804733c8eb634b12952753ef739d8363a144fca87ba05f7e08b6b75801e31289a14f7ec580a22c7be35527c5b1c1e391787fff9bac9cd3ffb67
   languageName: node
   linkType: hard
 
@@ -7617,9 +7609,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-select@npm:^5.7.5":
-  version: 5.8.0
-  resolution: "react-select@npm:5.8.0"
+"react-select@npm:^5.7.2":
+  version: 5.7.2
+  resolution: "react-select@npm:5.7.2"
   dependencies:
     "@babel/runtime": ^7.12.0
     "@emotion/cache": ^11.4.0
@@ -7633,7 +7625,7 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: c8398cc0aefb5ee5438b6176c86676e2d3fed7457c16b0769f423a0da0ae431a7df25c2cadf13b709700882b8ebd80a58b1e557fec3e22ad3cbf60164ca9e745
+  checksum: 1cb03c308be98b0bb89361dd842b92010ebd6769e388c380f2303ccfb14768b2085d0b94478dcd67841991272570fd27f75ea3035a230378fe14215d857e8ff7
   languageName: node
   linkType: hard
 
@@ -7934,6 +7926,7 @@ __metadata:
     "@upstash/ratelimit": ^0.4.4
     "@upstash/redis": ^1.22.1
     autoprefixer: ^10.4.16
+    csstype: ^3.1.2
     cypress: ^13.3.0
     delay: ^6.0.0
     dexie: ^3.2.4
@@ -7944,7 +7937,7 @@ __metadata:
     ky: ^1.1.3
     lint-staged: ^14.0.1
     mixpanel-browser: ^2.47.0
-    next: 13.5.3
+    next: ^13.5.6
     next-bundle-analyzer: ^0.6.7
     next-circular-dependency: ^1.0.1
     next-seo: ^6.1.0
@@ -7963,7 +7956,7 @@ __metadata:
     react-dom: ^18.2.0
     react-lite-youtube-embed: ^2.3.52
     react-markdown: ^9.0.0
-    react-select: ^5.7.5
+    react-select: ^5.7.2
     react-ssr-prepass: ^1.5.0
     react-sticky-box: ^2.0.4
     react-toastify: ^9.1.3
@@ -9327,8 +9320,8 @@ __metadata:
   linkType: hard
 
 "viem@npm:^1.0.0, viem@npm:^1.19.3":
-  version: 1.19.15
-  resolution: "viem@npm:1.19.15"
+  version: 1.20.0
+  resolution: "viem@npm:1.20.0"
   dependencies:
     "@adraffy/ens-normalize": 1.10.0
     "@noble/curves": 1.2.0
@@ -9343,18 +9336,18 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: fe67cfe6aba022ee7cd3cc8997a9ce87ee7143d04ed07af08b6c0fd9239ab39179ad00a5febaba47c9483ae605104044d1f70c8e2f9ed4e88a66f972c9175c06
+  checksum: 0309bddd163c2da83c36c5f1a62a7a3fa826eb2c8bd578eccb8f1a034f741938bafb616ae6c9f8489f416df2348dc0d09c0ec9146047e99fa2f9e4bc05134497
   languageName: node
   linkType: hard
 
 "wagmi@npm:^1.4.7":
-  version: 1.4.11
-  resolution: "wagmi@npm:1.4.11"
+  version: 1.4.12
+  resolution: "wagmi@npm:1.4.12"
   dependencies:
     "@tanstack/query-sync-storage-persister": ^4.27.1
     "@tanstack/react-query": ^4.28.0
     "@tanstack/react-query-persist-client": ^4.28.0
-    "@wagmi/core": 1.4.11
+    "@wagmi/core": 1.4.12
     abitype: 0.8.7
     use-sync-external-store: ^1.2.0
   peerDependencies:
@@ -9364,7 +9357,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 44fe06ebf874fb8e3575161b8a4ae991929ddd9a9547df7696b42a251e52fb847f681bf37b8abc5401aadc39e48064a4d99b76d56876d99c92bdb8ee189d665f
+  checksum: 7c1cb64c53e29899d508142e43a450b07f7f4f0ac2a19f5651f0f3dbfe2bb5b159d2b6251f6f613bd9bae007dc8390383ff79f5ab7bdf8d06788fe0bbdb3f8ab
   languageName: node
   linkType: hard
 
