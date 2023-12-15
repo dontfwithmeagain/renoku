@@ -1,5 +1,4 @@
 import Prose from 'components/common/Prose';
-import Script from 'next/script';
 import PublicLayout from './PublicLayout';
 
 interface Props {
@@ -16,7 +15,7 @@ async function loadJs(src, async, defer) {
   body.appendChild(script);
 }
 const ProseLayout = ({ children, searchBar }: Props) => {
-  <Script src="/js/iskaba.js" />;
+  // <Script src="/js/iskaba.js" />;
   return (
     <PublicLayout searchBar={searchBar}>
       <Prose className="max-w-3xl mx-auto">{children}</Prose>
