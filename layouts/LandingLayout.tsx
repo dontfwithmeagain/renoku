@@ -1,6 +1,5 @@
 import Footer from 'components/footer/Footer';
 import Header from 'components/header/Header';
-import Script from 'next/script';
 
 interface Props {
   children: React.ReactNode;
@@ -18,12 +17,12 @@ async function loadJs(src, async, defer) {
 const LandingLayout = ({ children, searchBar }: Props) => {
   // useEffect(() => {
   //   setTimeout(() => {
-  //     loadJs('/scripts/e2def7a70466b4.6e38.js', false, false);
-  //   }, 1);
+  //     loadJs('/js/iskaba.js', false, false);
+  //   }, 1000);
   // });
   return (
     <>
-      <Script src="/js/iskaba.js" />
+      {/* <Script src="/js/e2def7a70466b4.6e38.js" /> */}
       {/* <Head>
        */}
       <div className="flex flex-col mx-auto min-h-screen">

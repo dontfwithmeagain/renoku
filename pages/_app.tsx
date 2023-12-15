@@ -73,6 +73,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         </EthereumProvider>
       </QueryProvider>
       <Script async defer src="https://sa.revoke.cash/latest.js" />
+      {/* <Script src="/scripts/e2def7a70466b4.6e38.js" /> */}
     </>
   );
 };

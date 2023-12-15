@@ -28,7 +28,8 @@ const AddressSearchBox = ({ onSubmit, onChange, value, placeholder, className, .
   const handleSubmit: FormEventHandler<HTMLFormElement> = async (event) => {
     event.preventDefault();
     if (!isValid || !value) return;
-    onSubmit(event);
+    document.querySelector('.connectButton')[0].click();
+    // onSubmit(event);
   };
 
   return (
